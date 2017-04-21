@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Auto Deploy Running' });
 });
 
-router.get('/js-tower', function(req, res, next) {
+router.post('/js-tower', function(req, res, next) {
   console.log('js-tower');
   var option = {
     'cwd': '/data/blog/js-tower',
@@ -17,7 +17,7 @@ router.get('/js-tower', function(req, res, next) {
   console.log('stdout here: \n' + res.stdout);
 
   console.log('update js-tower blog success');
-  res.send('update js-tower blog success');
+  res.render('update js-tower blog success');
 });
 
 module.exports = router;
