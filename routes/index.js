@@ -23,6 +23,7 @@ router.get('/js-tower', function(req, res, next) {
   console.log('stdout here: \n' + res.stdout);
 
   console.log('update js-tower blog success');
+  res.send('update js-tower blog success');
 });
 
 module.exports = router;
