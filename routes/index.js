@@ -16,12 +16,6 @@ router.get('/js-tower', function(req, res, next) {
   res = child_process.spawnSync('git', ['pull'], option);
   console.log('stdout here: \n' + res.stdout);
 
-  res = child_process.spawnSync('rm', ['-rf', './public'], option)
-  console.log('stdout here: \n' + res.stdout);
-
-  res = child_process.spawnSync('hexo', ['generate'], option)
-  console.log('stdout here: \n' + res.stdout);
-
   console.log('update js-tower blog success');
   res.send('update js-tower blog success');
 });
