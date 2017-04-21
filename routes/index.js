@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 router.get('/js-tower', function(req, res, next) {
   console.log('js-tower');
   var option = {
-    'cwd': '/Users/zhentaoo/Code/js-tower',
+    'cwd': '/data/blog/js-tower',
   };
 
   res = child_process.spawnSync('git', ['pull'], option);
