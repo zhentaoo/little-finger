@@ -21,4 +21,4 @@
 
 ### Demo
 看一下这个node server 稳定运行32天，仅仅占用不到40M的内存！！！
-<img src="/img/auto-deploy.png" width = "650" height = "510" align=center />
+<img src="./doc/auto-deploy.png" width = "650" height = "510" align=center />
