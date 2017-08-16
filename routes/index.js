@@ -4,7 +4,7 @@ var child_process = require('child_process');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Auto Deploy Running' });
+  res.render('index', { title: 'Little Finger Running' });
 });
 
 router.post('/js-tower', function(req, res, next) {
