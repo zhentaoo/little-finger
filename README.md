@@ -7,7 +7,7 @@
 4. 如果有
 5. 如果有一个需要自动部署的项目，则在github配置对应的webhook（当该项目有新的commit时向little-finger发一个请求）
 6. 在little-finger中添加一条路由,类似router.post('/js-tower', cb)
-<img src="./doc/webhook.png" width = "650" height = "510" align=center />
+<img src="./doc/webhook.png" width = "750" height = "650" align=center />
 
 ### 设计思路
 1. 要知道github（gitlab）的repo是可以设置**webhook**的，如果repo有了新的commit，则会触发webhook
