@@ -13,11 +13,11 @@ router.post('/js-tower', function(req, res, next) {
     'cwd': '/data/blog/js-tower',
   };
 
-  res = child_process.spawnSync('git', ['pull'], option);
-  console.log('stdout here: \n' + res.stdout);
+  result = child_process.spawnSync('git', ['pull'], option);
+  console.log('stdout here: \n' + result.stdout);
 
   console.log('update js-tower blog success');
-  res.render('update js-tower blog success');
+  res.send('<p>update success</p>');
 });
 
 module.exports = router;
