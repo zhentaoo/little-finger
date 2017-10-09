@@ -1,0 +1,14 @@
+{
+  "apps": [{
+    "name": "little-finger",
+    "script": "./bin/www",
+    "exec_mode": "fork",
+    "max_memory_restart": "100M",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+
+    }
+  }]
+}
