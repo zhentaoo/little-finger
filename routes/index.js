@@ -20,16 +20,16 @@ router.post('/js-tower', function(req, res, next) {
   res.send('<p>update success</p>');
 });
 
-router.post('/final-statement', function(req, res, next) {
+router.post('/final-statement-private', function(req, res, next) {
   console.log('final-statement');
   var option = {
-    'cwd': '/data/final-statement',
+    'cwd': '/data/final-statement-private',
   };
 
   result = child_process.spawnSync('git', ['pull'], option);
   console.log('stdout here: \n' + result.stdout);
 
-  console.log('update final-statement blog success');
+  console.log('update final-statement-private blog success');
   res.send('<p>update success</p>');
 });
 
