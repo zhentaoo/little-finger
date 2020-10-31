@@ -42,7 +42,7 @@ router.post('/my-site', function(req, res, next) {
   result = child_process.spawnSync('git', ['pull'], option);
   console.log('stdout here: \n' + result.stdout);
 
-  result = child_process.spawnSync('npm', ['run build'], option);
+  result = child_process.spawnSync('npm', ['run', 'build'], option);
   console.log('update my-site blog success');
   res.send('<p>update success</p>');
 });
